@@ -1,0 +1,55 @@
+/* CSS для анимаций появления элементов при скролле */
+
+/* Начальные состояния элементов - скрытые и смещенные */
+/* Верхние анимации - скрыты сверху */
+.top_anim_S, .top_anim_M, .top_anim_L {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Нижние анимации - скрыты снизу */
+.bottom_anim_S, .bottom_anim_M, .bottom_anim_L {
+    transform: translateY(50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Левые анимации - скрыты слева */
+.left_anim_S, .left_anim_M, .left_anim_L {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Правые анимации - скрыты справа */
+.right_anim_S, .right_anim_M, .right_anim_L {
+    transform: translateX(50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* S - короткая длительность */
+.top_anim_S, .bottom_anim_S, .left_anim_S, .right_anim_S {
+    transition-duration: 0.5s;
+}
+
+/* M - средняя длительность */
+.top_anim_M, .bottom_anim_M, .left_anim_M, .right_anim_M {
+    transition-duration: 1.5s;
+}
+
+/* L - долгая длительность */
+.top_anim_L, .bottom_anim_L, .left_anim_L, .right_anim_L {
+    transition-duration: 2.0s;
+}
+
+/* Активное состояние - видимые и на месте */
+.animate-visible {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
