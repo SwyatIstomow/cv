@@ -91,7 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const containerWidth = `310px`;
     const containerMargin = `40px`;
-
+    const portfolioListBlock = document.querySelector('.portfolio_list');
+    portfolioListBlock.innerHTML = `<div class="loading_container"><div class="loading"></div></div>`;
     
     function checkImageExists(src) {
         return new Promise(resolve => {
@@ -554,4 +555,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
     });
-

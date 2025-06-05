@@ -1537,6 +1537,21 @@ body:lang(uk) .portfolio_text  {
     transition: 0.2s ease-in-out;
 }
 
+.loading_container {
+    width: calc(100vw - var(--padding-standart) * 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    width: 25%;
+    height: 25%;
+    background-size: cover;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="%23FFFFFF" stroke="%23FFFFFF" stroke-width="15" r="15" cx="40" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate></circle><circle fill="%23FFFFFF" stroke="%23FFFFFF" stroke-width="15" r="15" cx="100" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate></circle><circle fill="%23FFFFFF" stroke="%23FFFFFF" stroke-width="15" r="15" cx="160" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate></circle></svg>') no-repeat center center;
+}
+
 @media (max-width: 960px){
     
     .portfolio_item_container.active_port .portfolio_info {
@@ -1558,6 +1573,10 @@ body:lang(uk) .portfolio_text  {
     .portfolio_item_container.active_port .portfolio_files {
         min-width: 750px;
     }
+
+    .loading_container {
+    width: 100%;
+}
 }
 
 @media (max-width: 600px){
