@@ -2510,16 +2510,16 @@ body:lang(uk) .footer_subtitle {
         --padding-standart: 20px;
     }
 
-    .skills_title {
+    .skills .skills_title {
         font-size: 15px;
     }
-    .skills_title_percent {
+    .skills .skills_title_percent {
         font-size: 15px;
     }
-    .skills_progressbar_block {
+    .skills .skills_progressbar_block {
         height: 4px;
     }
-    .skills_container {
+    .skills .skills_container {
         border-radius: 20px;
         padding: 20px;
     }
