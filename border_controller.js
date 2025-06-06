@@ -1,9 +1,14 @@
 function updateBorderRadius() {
     const element = document.querySelector('.slider');
-    const element2 = document.querySelector('.expertise');
     const element3 = document.querySelector('.portfolio_list_block');
     const currentWidth = window.innerWidth;
-    element.style.zoom = `${currentWidth / 1920}`;
+    scaleFactor = currentWidth / 1920
+    element.style.zoom = `${scaleFactor}`;
+    if (navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chrome")) {
+        element.style.fontSize = `${16 * scaleFactor}px`;
+        document.documentElement.style.fontSize = `${16 * scaleFactor}px`;
+    }
+
     if ((currentWidth <= 960) && (currentWidth > 745)) {
         element3.style.zoom = `${currentWidth / 960}`;
     } else if (currentWidth <= 745) {

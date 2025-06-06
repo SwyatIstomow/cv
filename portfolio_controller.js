@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
 
-    
     const albums = [
         {
             name: "Figma",

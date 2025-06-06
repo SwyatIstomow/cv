@@ -31,9 +31,12 @@
   "author": "<b>Autor</b>",
   "9_originalprograms": "9 originale<br/>Programme",
     "?": "?" ,
-  "what": "<span style=\"font-size: 170px; margin-bottom: 50px;\">was</span>",
-  "can_i": "<span style=\"font-size: 70px\">kann ich</span>",
-  "do": "<span style=\"font-size: 170px\">tun</span>",
+
+  "what": "<span style=\"font-size: 10.625rem;\">was</span>",
+  "can_i": "<span style=\"font-size: 4.375rem\">kann ich</span>",
+  "do": "<span style=\"font-size: 10.625rem\">tun</span>",
+
+
   "john_doe": "<b>John Doe</b>",
   "contact_with_me": "Kontaktieren Sie mich",
   "download_cv": "Lebenslauf herunterladen",

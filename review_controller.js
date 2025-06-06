@@ -228,7 +228,7 @@ function setLanguage(language) {
         const activeButton = document.querySelector('.active_review_btn');
         if (activeButton) {
             const buttonIndex = parseInt(activeButton.id.split('_')[1]) - 1;
-            updateReview(buttonIndex);
+            
         }
     }
 }
